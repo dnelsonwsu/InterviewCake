@@ -14,7 +14,7 @@ def get_random(floor, ceiling):
 def randomize_array_in_place(array):
     array_size = len(array)
     for i in range(array_size - 1):
-        switch_index = get_random(0, array_size - 1)
+        switch_index = get_random(i, array_size - 1)
         if switch_index != i:
             tmp = array[i]
             array[i] = array[switch_index]
